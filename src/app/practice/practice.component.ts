@@ -26,7 +26,7 @@ export class PracticeComponent implements OnInit {
   addInput() {(this.formName.get('controllerArray') as FormArray)
   .push(this.fb.group({controlerInputName1:''})) }
 
-  removeInput(index) { this.formName.controls.controllerArray["controls"].splice(index,1) }
+  removeInput(index) { this.formName.get('controllerArray')["controls"].splice(index,1) }
 
  
 
