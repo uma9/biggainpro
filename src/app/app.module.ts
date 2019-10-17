@@ -25,12 +25,23 @@ import { AddpostformComponent } from './addpostform/addpostform.component';
 
 
 
+import { UploadComponent } from './upload/upload.component';
+import { EventLogComponent } from './event-log/event-log.component';
+import { ImgComponent } from './img/img.component';
+import { FaqsComponent } from './faqs/faqs.component';
+import { PracticeComponent } from './practice/practice.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddpostformComponent
+    AddpostformComponent,
+    EventLogComponent,
+    UploadComponent,
+    ImgComponent,
+    FaqsComponent,
+    PracticeComponent  
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

@@ -1,0 +1,80 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+            
+        
+<form [formGroup]='formName' class="">
+      <div class="col-12">
+              
+            <button type="button" 
+            id="addNewSocial" type="button" (click)='addInput()'>
+                 <span class="plus-sign">+</span>
+              Add New    </button><br>
+          </div>
+   <div class="card-body" formArrayName="controllerArray" >
+     
+      
+   <div class="row">
+      <div class="col-12  mar-btm" *ngFor="let item of formName.controls.controllerArray.controls; let i=index"
+      [formGroupName]="i">
+          
+
+      <div id="faqs_info_sortable_container">
+    
+
+            <div class="directorist row atbdp_faqs_wrapper" id="faqsID-0" style="margin-bottom: 10px">
+                <div class="col-md-4 col-sm-12">
+                    <div class="form-group">
+                      <select name="" class="form-control" style="height:45px; font-size:15px;">
+                        <option value="behance"> Behance</option>
+                        <option value="dribbble"> Dribbble</option>
+                        <option value="facebook"> Facebook</option>
+                        <option value="flickr"> Flickr</option>
+                        <option value="github"> Github</option>
+                        <option value="google-plus"> Google+</option>
+                        <option value="instagram"> Instagram</option>
+                        <option value="linkedin"> LinkedIn</option>
+                        <option value="pinterest"> Pinterest</option>
+                        <option value="reddit"> Reddit</option>
+                        <option value="snapchat-ghost"> Snapchat</option>
+                        <option value="soundcloud"> SoundCloud</option>
+                        <option value="stack-overflow"> StackOverFLow</option>
+                        <option value="tumblr"> Tumblr</option>
+                        <option value="twitter"> Twitter</option>
+                        <option value="vimeo"> Vimeo</option>
+                        <option value="vine"> Vine</option>
+                      
+                </select>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <div class="form-group">
+                    <!-- <label></label>-->
+                     <input type="text"  placeholder="Enter ...." name="faqs[][quez]"
+                      id="atbdp_social" value="" class="form-control atbdp_faqs_quez inputs">
+         
+                 </div>
+                </div>
+                <div class="col-md-2 col-sm-12 cent">
+                    <span data-id="0" class="removeFAQSField dashicons dashicons-trash" 
+                    title="Remove this item" (click)='removeInput(i)'></span>
+                    
+                </div>
+            </div>
+            </div>
+
+          <!-- <div class="form-group col-md-2 col-xs-12 text-right">
+            <button class="btn btn-dan trash" type="button" (click)='removeInput(i)'> 
+               
+                <span class="lid"></span>
+                <span class="can"></span>
+            </button>
+            
+            
+                
+            
+          </div> -->
+        </div>
+      </div>
+    </div>
+ </form>
+ 
+ 
