@@ -6,7 +6,7 @@
         (select)="selectEventHandler($event)"
        
         (remove)="removeEventHandler($event)"
-        (complete)="completeEventHandler($event)" >
+        (complete)="completeEventHandler()" >
       </kendo-upload>
 
       <event-log title="Event log" [events]="events"></event-log>
