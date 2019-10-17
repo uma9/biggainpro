@@ -16,10 +16,10 @@ export class UploadComponent {
   public uploadSaveUrl = 'saveUrl'; // should represent an actual API endpoint
   public uploadRemoveUrl = 'removeUrl'; // should represent an actual API endpoint
 
-  // public clearEventHandler($event: any): void {
-  //   this.log('Clearing the file upload');
-  //   this.imagePreviews = [];
-  // }
+  public clearEventHandler(): void {
+    this.log('Clearing the file upload');
+    this.imagePreviews = [];
+  }
 
   public completeEventHandler() {
     this.log(`All files processed`);

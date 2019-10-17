@@ -4,7 +4,7 @@
         [removeUrl]="uploadRemoveUrl"
         [restrictions]="uploadRestrictions"
         (select)="selectEventHandler($event)"
-       
+        (clear)="clearEventHandler()"
         (remove)="removeEventHandler($event)"
         (complete)="completeEventHandler()" >
       </kendo-upload>
